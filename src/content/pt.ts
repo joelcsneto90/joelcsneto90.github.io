@@ -4,7 +4,7 @@ export const pt: Content = {
   meta: {
     title: 'Joel Neto — Solution Architect & Senior .NET Developer',
     description:
-      'Portfolio de Joel Neto: arquitetura e entrega de soluções em .NET, Azure e Power Platform, com agentes de IA no fluxo de trabalho.',
+      'Portfolio de Joel Neto: arquitetura e entrega de soluções em .NET e Azure, com front-end em React e Angular e agentes de IA no fluxo de trabalho.',
   },
   nav: { about: 'Sobre', ai: 'IA no trabalho', resume: 'Currículo', contact: 'Contato' },
   ui: {
@@ -19,7 +19,7 @@ export const pt: Content = {
   hero: {
     role: 'Solution Architect & Senior .NET Developer',
     tagline:
-      'Desenho e entrego soluções em .NET, Azure e Power Platform, do diagrama ao deploy, com agentes de IA como parte do meu jeito de trabalhar.',
+      'Desenho e entrego soluções em .NET e Azure, com front-end em React e Angular, do diagrama ao deploy, com agentes de IA como parte do meu jeito de trabalhar.',
     ctaResume: 'Ver currículo',
     ctaContact: 'Falar comigo',
   },
@@ -87,12 +87,12 @@ export const pt: Content = {
         stack: ['.NET', 'Hangfire', 'MediatR', 'MassTransit', 'Azure Service Bus', '.NET Aspire'],
       },
       {
-        role: 'Power Apps Solution Architect',
+        role: 'Solution Architect',
         company: 'Net-IT',
         period: '12/2018 — 05/2026',
         location: 'Portugal',
         summary:
-          'Consultoria em Microsoft Dynamics 365 e Power Platform para clientes de saúde, educação, eventos, marketing, vendas e seguros.',
+          'Consultoria para clientes de saúde, educação, eventos, marketing, vendas e seguros: backend em C#/.NET e integrações em Azure, sobre o ecossistema Microsoft Dynamics 365.',
         responsibilities: [
           'Arquitetura de soluções: diagramas técnicos, decisões de arquitetura e revisão de PRs.',
           'Definição da melhor solução junto com os analistas e estimativas de esforço.',
@@ -101,20 +101,18 @@ export const pt: Content = {
         results: [
           'Sincronização em Azure Functions e Service Bus reestruturada: sem throttling nem concorrência entre execuções, com processamento thread-safe e melhor divisão das etapas sequenciais. Os erros caíram 80%, e os poucos casos restantes se resolvem logo em seguida com retries de backoff exponencial.',
           'Projetos entregues de ponta a ponta como líder técnico, do levantamento à entrada em produção.',
-          'Migração de sistemas antigos para versões mais novas da plataforma.',
+          'Migração de sistemas antigos para versões mais novas.',
         ],
         stack: [
           'C# / .NET 8',
-          'Dataverse',
-          'Power Pages',
-          'Power Automate',
-          'PCF (React)',
           'Azure Functions',
+          'Service Bus',
           'Logic Apps',
           'Data Factory',
-          'Service Bus',
           'Key Vault',
           'Azure DevOps',
+          'React',
+          'Dynamics 365',
         ],
       },
       {
@@ -165,8 +163,8 @@ export const pt: Content = {
     skills: [
       { group: 'Backend e cloud', items: ['C# / .NET 10', 'ASP.NET', 'SQL', 'Azure Functions', 'Data Factory', 'Service Bus', 'Key Vault'] },
       { group: 'Front-end', items: ['React', 'Angular', 'Blazor', 'TypeScript'] },
-      { group: 'Plataforma', items: ['Dynamics 365', 'Power Apps', 'Power BI'] },
       { group: 'Práticas', items: ['DDD', 'Clean Code', 'TDD', 'Testes unitários e de integração', 'DevOps', 'Scrum', 'Agentes de IA'] },
+      { group: 'Também', items: ['Dynamics 365', 'Power Platform'] },
     ],
     educationTitle: 'Formação',
     education: [
@@ -175,9 +173,9 @@ export const pt: Content = {
     ],
     certificationsTitle: 'Certificações',
     certifications: [
-      { code: 'MB-600', name: 'Dynamics 365 + Power Platform Solution Architect' },
       { code: 'AZ-900', name: 'Azure Fundamentals' },
       { code: '70-483', name: 'Programming in C#' },
+      { code: 'MB-600', name: 'Dynamics 365 + Power Platform Solution Architect' },
     ],
     languagesTitle: 'Idiomas',
     languages: [

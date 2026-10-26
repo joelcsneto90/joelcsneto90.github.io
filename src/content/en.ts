@@ -4,7 +4,7 @@ export const en: Content = {
   meta: {
     title: 'Joel Neto — Solution Architect & Senior .NET Developer',
     description:
-      'Portfolio of Joel Neto: designing and delivering .NET, Azure and Power Platform solutions, with AI agents in the workflow.',
+      'Portfolio of Joel Neto: designing and delivering .NET and Azure solutions with React and Angular front ends, with AI agents in the workflow.',
   },
   nav: { about: 'About', ai: 'AI at work', resume: 'Resume', contact: 'Contact' },
   ui: {
@@ -19,7 +19,7 @@ export const en: Content = {
   hero: {
     role: 'Solution Architect & Senior .NET Developer',
     tagline:
-      'I design and deliver .NET, Azure and Power Platform solutions, from the diagram to the deploy, with AI agents as part of how I work.',
+      'I design and deliver .NET and Azure solutions, with React and Angular front ends, from the diagram to the deploy, with AI agents as part of how I work.',
     ctaResume: 'View resume',
     ctaContact: 'Get in touch',
   },
@@ -87,12 +87,12 @@ export const en: Content = {
         stack: ['.NET', 'Hangfire', 'MediatR', 'MassTransit', 'Azure Service Bus', '.NET Aspire'],
       },
       {
-        role: 'Power Apps Solution Architect',
+        role: 'Solution Architect',
         company: 'Net-IT',
         period: '12/2018 — 05/2026',
         location: 'Portugal',
         summary:
-          'Microsoft Dynamics 365 and Power Platform consulting for clients in healthcare, education, events, marketing, sales and insurance.',
+          'Consulting for clients in healthcare, education, events, marketing, sales and insurance: C#/.NET backend and Azure integrations, on top of the Microsoft Dynamics 365 ecosystem.',
         responsibilities: [
           'Solution architecture: technical diagrams, architecture decisions and PR reviews.',
           'Defining the best solution together with analysts, and effort estimates.',
@@ -101,20 +101,18 @@ export const en: Content = {
         results: [
           'Restructured an Azure Functions and Service Bus synchronization: no more throttling or concurrency between runs, with thread-safe processing and a better split of sequential steps. Errors dropped by 80%, and the few remaining cases recover right after through exponential-backoff retries.',
           'Projects delivered end to end as technical lead, from requirements to production.',
-          'Migration of legacy systems to newer versions of the platform.',
+          'Migration of legacy systems to newer versions.',
         ],
         stack: [
           'C# / .NET 8',
-          'Dataverse',
-          'Power Pages',
-          'Power Automate',
-          'PCF (React)',
           'Azure Functions',
+          'Service Bus',
           'Logic Apps',
           'Data Factory',
-          'Service Bus',
           'Key Vault',
           'Azure DevOps',
+          'React',
+          'Dynamics 365',
         ],
       },
       {
@@ -165,8 +163,8 @@ export const en: Content = {
     skills: [
       { group: 'Backend & cloud', items: ['C# / .NET 10', 'ASP.NET', 'SQL', 'Azure Functions', 'Data Factory', 'Service Bus', 'Key Vault'] },
       { group: 'Front-end', items: ['React', 'Angular', 'Blazor', 'TypeScript'] },
-      { group: 'Platform', items: ['Dynamics 365', 'Power Apps', 'Power BI'] },
       { group: 'Practices', items: ['DDD', 'Clean Code', 'TDD', 'Unit and integration testing', 'DevOps', 'Scrum', 'AI agents'] },
+      { group: 'Also', items: ['Dynamics 365', 'Power Platform'] },
     ],
     educationTitle: 'Education',
     education: [
@@ -175,9 +173,9 @@ export const en: Content = {
     ],
     certificationsTitle: 'Certifications',
     certifications: [
-      { code: 'MB-600', name: 'Dynamics 365 + Power Platform Solution Architect' },
       { code: 'AZ-900', name: 'Azure Fundamentals' },
       { code: '70-483', name: 'Programming in C#' },
+      { code: 'MB-600', name: 'Dynamics 365 + Power Platform Solution Architect' },
     ],
     languagesTitle: 'Languages',
     languages: [

@@ -10,6 +10,7 @@ import { en } from './content/en'
 import { profile } from './content/profile'
 import { pt } from './content/pt'
 import { useLang } from './hooks/useLang'
+import { useReveal } from './hooks/useReveal'
 import { useTheme } from './hooks/useTheme'
 
 const year = new Date().getFullYear()
@@ -18,6 +19,7 @@ export default function App() {
   const { lang, toggle: toggleLang } = useLang()
   const { theme, toggle: toggleTheme } = useTheme()
   const c = lang === 'pt' ? pt : en
+  useReveal()
 
   useEffect(() => {
     document.title = c.meta.title

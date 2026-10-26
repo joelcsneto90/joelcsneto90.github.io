@@ -36,8 +36,8 @@ export function Skills({ c }: { c: Content }) {
       <div className="container">
         <SectionTitle title={r.skillsTitle} />
         <div className="skills">
-          {r.skills.map((s) => (
-            <div key={s.group} className="skill-group">
+          {r.skills.map((s, i) => (
+            <div key={i} className="skill-group">
               <h3>{s.group}</h3>
               <Chips items={s.items} />
             </div>
@@ -56,7 +56,7 @@ export function Education({ c }: { c: Content }) {
         <SectionTitle title={r.educationTitle} />
         <div className="education">
           {r.education.map((e) => (
-            <article key={e.title} className="degree">
+            <article key={e.year} className="degree">
               <p className="degree-year">{e.year}</p>
               <h3>{e.title}</h3>
               <p className="degree-school">{e.school}</p>

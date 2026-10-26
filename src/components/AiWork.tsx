@@ -11,7 +11,8 @@ export function AiWork({ c }: { c: Content }) {
         <p className="lead">{c.ai.intro}</p>
         <ol className="practices">
           {c.ai.practices.map((p, i) => (
-            <li key={p.title}>
+            // Index keys keep the same nodes across a language switch, so revealed items stay revealed.
+            <li key={i}>
               <span className="practice-num">{String(i + 1).padStart(2, '0')}</span>
               <h3>{p.title}</h3>
               <p>{p.text}</p>

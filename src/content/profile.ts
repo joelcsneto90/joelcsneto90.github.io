@@ -7,4 +7,5 @@ export const profile = {
   github: 'https://github.com/joelcsneto90',
   aiRepo: 'https://github.com/joelcsneto90/work_general',
   resumePdf: '/joel-neto-resume.pdf',
+  photo: '/joel.jpg',
 }

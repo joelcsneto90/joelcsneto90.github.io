@@ -6,7 +6,7 @@ export const en: Content = {
     description:
       'Portfolio of Joel Neto: designing and delivering .NET and Azure solutions with React and Angular front ends, with AI agents in the workflow.',
   },
-  nav: { about: 'About', ai: 'AI at work', resume: 'Resume', contact: 'Contact' },
+  nav: { about: 'About', ai: 'AI at work', resume: 'Journey', contact: 'Contact' },
   ui: {
     toDark: 'Dark theme',
     toLight: 'Light theme',
@@ -14,25 +14,24 @@ export const en: Content = {
     otherLangLabel: 'Mudar para português',
     responsibilities: 'Responsibilities',
     results: 'Results and deliveries',
-    stack: 'Stack',
-    downloadResume: 'Download resume (PDF)',
+    downloadResume: 'Download resume',
   },
   hero: {
-    role: 'Solution Architect & Senior .NET Developer',
+    greeting: 'Hello!',
+    role: 'Solution Architect · .NET',
     tagline:
       'I design and deliver .NET and Azure solutions, with React and Angular front ends, from the diagram to the deploy, with AI agents as part of how I work.',
-    ctaResume: 'View resume',
-    ctaContact: 'Get in touch',
+    ctaJourney: 'My journey',
   },
   about: {
-    title: 'About me',
     paragraphs: [
       "I've been building software for over 15 years, mostly with .NET and Azure. I started as a developer at 21; before that I worked in technical support and hardware maintenance. Today my work goes beyond writing code: I define architecture, estimate, review PRs and follow projects from requirements to delivery.",
       'I especially enjoy integration and synchronization problems between systems, where concurrency, volume and partial failures decide whether a solution holds up in production.',
     ],
   },
   ai: {
-    title: 'How I use AI at work',
+    title: 'AI at work',
+    subtitle: 'How I use agents day to day',
     intro:
       'I use coding agents (Claude Code, Codex and GitHub Copilot) every day, but with a process: the agent follows the same rules I would, and nothing counts as done without verification.',
     practices: [
@@ -65,9 +64,9 @@ export const en: Content = {
     footnote: 'This site was planned and built with this same process.',
   },
   resume: {
-    title: 'Resume',
-    intro: 'The focus here is what I solved, what I delivered and what I was accountable for at each company.',
-    experienceTitle: 'Experience',
+    title: 'My journey',
+    subtitle: 'Professional experience',
+    intro: 'What I solved, what I delivered and what I was accountable for at each company.',
     jobs: [
       {
         role: 'Senior .NET Developer',
@@ -81,9 +80,9 @@ export const en: Content = {
           'Sync flows with each channel: background jobs, internal events and messaging.',
         ],
         results: [
-          'Full end-to-end Shein integration: item allocation, price publishing, order intake, cancellations and refunds.',
-          'Unit and integration tests in a TDD-like approach: with many jobs and chained events, the tests keep the interplay between the parts of the system stable.',
-          '.NET Aspire project as the developer entry point: the local environment starts from a single project, with services and dependencies orchestrated.',
+          '**Full end-to-end Shein integration**: item allocation, price publishing, order intake, cancellations and refunds.',
+          'Unit and integration tests in a **TDD-like approach**: with many jobs and chained events, the tests keep the interplay between the parts of the system stable.',
+          '**.NET Aspire** project as the developer entry point: the local environment starts from a single project, with services and dependencies orchestrated.',
         ],
         stack: ['.NET', 'Hangfire', 'MediatR', 'MassTransit', 'Azure Service Bus', '.NET Aspire'],
       },
@@ -100,9 +99,9 @@ export const en: Content = {
           'Technical lead on projects from start to finish.',
         ],
         results: [
-          'Restructured an Azure Functions and Service Bus synchronization: no more throttling or concurrency between runs, with thread-safe processing and a better split of sequential steps. Errors dropped by 80%, and the few remaining cases recover right after through exponential-backoff retries.',
-          'Projects delivered end to end as technical lead, from requirements to production.',
-          'Migration of legacy systems to newer versions.',
+          'Restructured an Azure Functions and Service Bus synchronization: no more throttling or concurrency between runs, with thread-safe processing and a better split of sequential steps. **Errors dropped by 80%**, and the few remaining cases recover right after through **exponential-backoff retries**.',
+          'Projects delivered **end to end** as technical lead, from requirements to production.',
+          '**Migration of legacy systems** to newer versions.',
         ],
         stack: [
           'C# / .NET 8',
@@ -122,8 +121,8 @@ export const en: Content = {
         period: '01/2018 — 11/2018',
         location: 'Brazil',
         results: [
-          'Improved performance of a US payroll system (Worklogic).',
-          'Integration tests for the payroll system.',
+          '**Improved performance** of a US payroll system (Worklogic).',
+          '**Integration tests** for the payroll system.',
           'New features for a dental plan system, deployed on Linux.',
         ],
         stack: ['C#', 'ASP.NET MVC', 'Blazor', 'NHibernate', 'SQL Server', 'Selenium', 'Angular', 'Node.js', 'PostgreSQL', 'Wildfly', 'Nginx'],
@@ -135,7 +134,7 @@ export const en: Content = {
         location: 'Brazil',
         results: [
           'Built solutions for an electrical studies company, on an IBM Informix database.',
-          'Extensive experience with Scrum, DDD, MVVM, DI and IoC.',
+          'Extensive experience with **Scrum, DDD, MVVM, DI and IoC**.',
         ],
         stack: ['C#', 'ASP.NET MVC', 'Entity Framework', 'WPF', 'WCF', 'VSTO', 'TFS'],
       },
@@ -185,7 +184,7 @@ export const en: Content = {
     ],
   },
   contact: {
-    title: 'Contact',
-    text: 'Open to conversations about architecture, integrations and opportunities.',
+    title: "Let's talk?",
+    text: 'Open to conversations about architecture, integrations and new opportunities.',
   },
 }

@@ -6,7 +6,7 @@ export const pt: Content = {
     description:
       'Portfolio de Joel Neto: arquitetura e entrega de soluções em .NET e Azure, com front-end em React e Angular e agentes de IA no fluxo de trabalho.',
   },
-  nav: { about: 'Sobre', ai: 'IA no trabalho', resume: 'Currículo', contact: 'Contato' },
+  nav: { about: 'Sobre', ai: 'IA no trabalho', resume: 'Trajetória', contact: 'Contato' },
   ui: {
     toDark: 'Tema escuro',
     toLight: 'Tema claro',
@@ -14,25 +14,24 @@ export const pt: Content = {
     otherLangLabel: 'Switch to English',
     responsibilities: 'Responsabilidades',
     results: 'Resultados e entregas',
-    stack: 'Stack',
-    downloadResume: 'Baixar currículo (PDF, em inglês)',
+    downloadResume: 'Baixar currículo',
   },
   hero: {
-    role: 'Solution Architect & Senior .NET Developer',
+    greeting: 'Olá!',
+    role: 'Solution Architect · .NET',
     tagline:
       'Desenho e entrego soluções em .NET e Azure, com front-end em React e Angular, do diagrama ao deploy, com agentes de IA como parte do meu jeito de trabalhar.',
-    ctaResume: 'Ver currículo',
-    ctaContact: 'Falar comigo',
+    ctaJourney: 'Minha trajetória',
   },
   about: {
-    title: 'Sobre mim',
     paragraphs: [
       'Desenvolvo software há mais de 15 anos, a maior parte em .NET e Azure. Comecei como desenvolvedor aos 21; antes disso trabalhei com suporte técnico e manutenção de hardware. Hoje meu trabalho vai além de escrever código: defino arquitetura, faço estimativas, reviso PRs e acompanho projetos do levantamento à entrega.',
       'Gosto especialmente de problemas de integração e sincronização entre sistemas, onde concorrência, volume e falhas parciais decidem se a solução aguenta a produção.',
     ],
   },
   ai: {
-    title: 'Como uso IA no trabalho',
+    title: 'IA no trabalho',
+    subtitle: 'Como uso agentes no dia a dia',
     intro:
       'Uso agentes de código (Claude Code, Codex e GitHub Copilot) no dia a dia, mas com processo: o agente segue as mesmas regras que eu seguiria, e nada é dado como pronto sem verificação.',
     practices: [
@@ -65,9 +64,9 @@ export const pt: Content = {
     footnote: 'Este site foi planejado e construído com esse mesmo processo.',
   },
   resume: {
-    title: 'Currículo',
-    intro: 'O foco aqui é o que resolvi, o que entreguei e pelo que respondi em cada empresa.',
-    experienceTitle: 'Experiência',
+    title: 'Minha trajetória',
+    subtitle: 'Experiência profissional',
+    intro: 'O que resolvi, o que entreguei e pelo que respondi em cada empresa.',
     jobs: [
       {
         role: 'Senior .NET Developer',
@@ -81,9 +80,9 @@ export const pt: Content = {
           'Fluxos de sincronização com cada canal: jobs em background, eventos internos e mensageria.',
         ],
         results: [
-          'Integração completa com a Shein, de ponta a ponta: alocação de itens, publicação de preços, recebimento de pedidos, cancelamentos e estornos.',
-          'Testes unitários e de integração numa abordagem próxima de TDD: com muitos jobs e eventos encadeados, os testes mantêm estável a interação entre as partes do sistema.',
-          'Projeto .NET Aspire como ponto de partida do desenvolvedor: o ambiente local sobe a partir de um único projeto, com serviços e dependências orquestrados.',
+          '**Integração completa com a Shein**, de ponta a ponta: alocação de itens, publicação de preços, recebimento de pedidos, cancelamentos e estornos.',
+          'Testes unitários e de integração numa abordagem **próxima de TDD**: com muitos jobs e eventos encadeados, os testes mantêm estável a interação entre as partes do sistema.',
+          'Projeto **.NET Aspire** como ponto de partida do desenvolvedor: o ambiente local sobe a partir de um único projeto, com serviços e dependências orquestrados.',
         ],
         stack: ['.NET', 'Hangfire', 'MediatR', 'MassTransit', 'Azure Service Bus', '.NET Aspire'],
       },
@@ -100,9 +99,9 @@ export const pt: Content = {
           'Liderança técnica de projetos do início ao fim.',
         ],
         results: [
-          'Sincronização em Azure Functions e Service Bus reestruturada: sem throttling nem concorrência entre execuções, com processamento thread-safe e melhor divisão das etapas sequenciais. Os erros caíram 80%, e os poucos casos restantes se resolvem logo em seguida com retries de backoff exponencial.',
-          'Projetos entregues de ponta a ponta como líder técnico, do levantamento à entrada em produção.',
-          'Migração de sistemas antigos para versões mais novas.',
+          'Sincronização em Azure Functions e Service Bus reestruturada: sem throttling nem concorrência entre execuções, com processamento thread-safe e melhor divisão das etapas sequenciais. **Os erros caíram 80%**, e os poucos casos restantes se resolvem logo em seguida com **retries de backoff exponencial**.',
+          'Projetos entregues **de ponta a ponta** como líder técnico, do levantamento à entrada em produção.',
+          '**Migração de sistemas antigos** para versões mais novas.',
         ],
         stack: [
           'C# / .NET 8',
@@ -122,8 +121,8 @@ export const pt: Content = {
         period: '01/2018 — 11/2018',
         location: 'Brasil',
         results: [
-          'Melhoria de performance de um sistema de folha de pagamento dos EUA (Worklogic).',
-          'Testes de integração do sistema de folha de pagamento.',
+          '**Melhoria de performance** de um sistema de folha de pagamento dos EUA (Worklogic).',
+          '**Testes de integração** do sistema de folha de pagamento.',
           'Novas funcionalidades para um sistema de plano odontológico, com deploy em Linux.',
         ],
         stack: ['C#', 'ASP.NET MVC', 'Blazor', 'NHibernate', 'SQL Server', 'Selenium', 'Angular', 'Node.js', 'PostgreSQL', 'Wildfly', 'Nginx'],
@@ -135,7 +134,7 @@ export const pt: Content = {
         location: 'Brasil',
         results: [
           'Soluções para uma empresa de estudos elétricos, com banco IBM Informix.',
-          'Experiência sólida com Scrum, DDD, MVVM, DI e IoC.',
+          'Experiência sólida com **Scrum, DDD, MVVM, DI e IoC**.',
         ],
         stack: ['C#', 'ASP.NET MVC', 'Entity Framework', 'WPF', 'WCF', 'VSTO', 'TFS'],
       },
@@ -185,7 +184,7 @@ export const pt: Content = {
     ],
   },
   contact: {
-    title: 'Contato',
-    text: 'Aberto a conversas sobre arquitetura, integrações e oportunidades.',
+    title: 'Vamos conversar?',
+    text: 'Aberto a conversas sobre arquitetura, integrações e novas oportunidades.',
   },
 }

@@ -1,9 +1,9 @@
 import { profile } from '../content/profile'
 import { DownloadIcon } from './Icons'
 
-export function ResumeButton({ label, primary }: { label: string; primary?: boolean }) {
+export function ResumeButton({ label }: { label: string }) {
   return (
-    <a className={primary ? 'btn btn-primary btn-icon' : 'btn btn-icon'} href={profile.resumePdf} download>
+    <a className="pill pill-solid" href={profile.resumePdf} download>
       <DownloadIcon />
       {label}
     </a>

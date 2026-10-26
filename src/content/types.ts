@@ -1,5 +1,6 @@
 export type Lang = 'pt' | 'en'
 
+// Strings in `results` may mark highlights with **double asterisks**.
 export interface Job {
   role: string
   company: string
@@ -28,13 +29,13 @@ export interface Content {
     otherLangLabel: string
     responsibilities: string
     results: string
-    stack: string
     downloadResume: string
   }
-  hero: { role: string; tagline: string; ctaResume: string; ctaContact: string }
-  about: { title: string; paragraphs: string[] }
+  hero: { greeting: string; role: string; tagline: string; ctaJourney: string }
+  about: { paragraphs: string[] }
   ai: {
     title: string
+    subtitle: string
     intro: string
     practices: { title: string; text: string }[]
     repoLabel: string
@@ -42,8 +43,8 @@ export interface Content {
   }
   resume: {
     title: string
+    subtitle: string
     intro: string
-    experienceTitle: string
     jobs: Job[]
     projectsTitle: string
     projects: Project[]

@@ -1,23 +1,25 @@
 import type { Content } from '../content/types'
 import { profile } from '../content/profile'
+import { SectionTitle } from './SectionTitle'
 
 export function AiWork({ c }: { c: Content }) {
   return (
-    <section id="ai" className="section">
+    <section id="ai" className="section ai">
       <div className="container">
-        <h2>{c.ai.title}</h2>
+        <SectionTitle title={c.ai.title} subtitle={c.ai.subtitle} />
         <p className="lead">{c.ai.intro}</p>
-        <div className="cards">
-          {c.ai.practices.map((p) => (
-            <article key={p.title} className="card">
+        <ol className="practices">
+          {c.ai.practices.map((p, i) => (
+            <li key={p.title}>
+              <span className="practice-num">{String(i + 1).padStart(2, '0')}</span>
               <h3>{p.title}</h3>
               <p>{p.text}</p>
-            </article>
+            </li>
           ))}
-        </div>
+        </ol>
         <p className="ai-footer">
-          <a href={profile.aiRepo} target="_blank" rel="noreferrer">
-            {c.ai.repoLabel} →
+          <a className="pill" href={profile.aiRepo} target="_blank" rel="noreferrer">
+            {c.ai.repoLabel} ↗
           </a>
           <span className="muted">{c.ai.footnote}</span>
         </p>

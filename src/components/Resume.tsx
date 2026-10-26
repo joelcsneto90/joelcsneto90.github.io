@@ -1,4 +1,5 @@
 import type { Content, Job } from '../content/types'
+import { ResumeButton } from './ResumeButton'
 
 function Chips({ items }: { items: string[] }) {
   return (
@@ -51,6 +52,7 @@ export function Resume({ c }: { c: Content }) {
       <div className="container">
         <h2>{r.title}</h2>
         <p className="lead">{r.intro}</p>
+        <ResumeButton label={c.ui.downloadResume} primary />
 
         <h3>{r.experienceTitle}</h3>
         <div className="jobs">

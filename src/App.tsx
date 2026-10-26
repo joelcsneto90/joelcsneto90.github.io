@@ -1,7 +1,9 @@
 import { useEffect } from 'react'
 import { AiWork } from './components/AiWork'
 import { Header } from './components/Header'
+import { GitHubIcon, LinkedInIcon, MailIcon } from './components/Icons'
 import { Resume } from './components/Resume'
+import { ResumeButton } from './components/ResumeButton'
 import { en } from './content/en'
 import { profile } from './content/profile'
 import { pt } from './content/pt'
@@ -34,6 +36,7 @@ export default function App() {
               <a className="btn btn-primary" href="#resume">
                 {c.hero.ctaResume}
               </a>
+              <ResumeButton label={c.ui.downloadResume} />
               <a className="btn" href="#contact">
                 {c.hero.ctaContact}
               </a>
@@ -59,16 +62,18 @@ export default function App() {
             <p>{c.contact.text}</p>
             <ul className="contact-links">
               <li>
-                <a href={`mailto:${profile.email}`}>{profile.email}</a>
-              </li>
-              <li>
-                <a href={profile.linkedin} target="_blank" rel="noreferrer">
-                  LinkedIn
+                <a href={`mailto:${profile.email}`} aria-label="E-mail" title={profile.email}>
+                  <MailIcon />
                 </a>
               </li>
               <li>
-                <a href={profile.github} target="_blank" rel="noreferrer">
-                  GitHub
+                <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                  <LinkedInIcon />
+                </a>
+              </li>
+              <li>
+                <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">
+                  <GitHubIcon />
                 </a>
               </li>
             </ul>

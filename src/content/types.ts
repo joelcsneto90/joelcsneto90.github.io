@@ -29,6 +29,7 @@ export interface Content {
     responsibilities: string
     results: string
     stack: string
+    downloadResume: string
   }
   hero: { role: string; tagline: string; ctaResume: string; ctaContact: string }
   about: { title: string; paragraphs: string[] }

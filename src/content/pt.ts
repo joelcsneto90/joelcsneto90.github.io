@@ -15,6 +15,7 @@ export const pt: Content = {
     responsibilities: 'Responsabilidades',
     results: 'Resultados e entregas',
     stack: 'Stack',
+    downloadResume: 'Baixar currículo (PDF, em inglês)',
   },
   hero: {
     role: 'Solution Architect & Senior .NET Developer',

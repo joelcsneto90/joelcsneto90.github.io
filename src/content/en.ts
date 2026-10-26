@@ -15,6 +15,7 @@ export const en: Content = {
     responsibilities: 'Responsibilities',
     results: 'Results and deliveries',
     stack: 'Stack',
+    downloadResume: 'Download resume (PDF)',
   },
   hero: {
     role: 'Solution Architect & Senior .NET Developer',

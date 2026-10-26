@@ -6,4 +6,5 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/joel-neto-b1039470',
   github: 'https://github.com/joelcsneto90',
   aiRepo: 'https://github.com/joelcsneto90/work_general',
+  resumePdf: '/joel-neto-resume.pdf',
 }

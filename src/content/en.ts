@@ -26,7 +26,7 @@ export const en: Content = {
   about: {
     title: 'About me',
     paragraphs: [
-      "I've been building software for over 13 years, mostly with .NET and Azure. Today my work goes beyond writing code: I define architecture, estimate, review PRs and follow projects from requirements to delivery.",
+      "I've been building software for over 15 years, mostly with .NET and Azure. I started as a developer at 21; before that I worked in technical support and hardware maintenance. Today my work goes beyond writing code: I define architecture, estimate, review PRs and follow projects from requirements to delivery.",
       'I especially enjoy integration and synchronization problems between systems, where concurrency, volume and partial failures decide whether a solution holds up in production.',
     ],
   },
@@ -81,6 +81,7 @@ export const en: Content = {
         ],
         results: [
           'Full end-to-end Shein integration: item allocation, price publishing, order intake, cancellations and refunds.',
+          'Unit and integration tests in a TDD-like approach: with many jobs and chained events, the tests keep the interplay between the parts of the system stable.',
           '.NET Aspire project as the developer entry point: the local environment starts from a single project, with services and dependencies orchestrated.',
         ],
         stack: ['.NET', 'Hangfire', 'MediatR', 'MassTransit', 'Azure Service Bus', '.NET Aspire'],
@@ -123,6 +124,7 @@ export const en: Content = {
         location: 'Brazil',
         results: [
           'Improved performance of a US payroll system (Worklogic).',
+          'Integration tests for the payroll system.',
           'New features for a dental plan system, deployed on Linux.',
         ],
         stack: ['C#', 'ASP.NET MVC', 'Blazor', 'NHibernate', 'SQL Server', 'Selenium', 'Angular', 'Node.js', 'PostgreSQL', 'Wildfly', 'Nginx'],
@@ -164,7 +166,7 @@ export const en: Content = {
       { group: 'Backend & cloud', items: ['C# / .NET 10', 'ASP.NET', 'SQL', 'Azure Functions', 'Data Factory', 'Service Bus', 'Key Vault'] },
       { group: 'Front-end', items: ['React', 'Angular', 'Blazor', 'TypeScript'] },
       { group: 'Platform', items: ['Dynamics 365', 'Power Apps', 'Power BI'] },
-      { group: 'Practices', items: ['DDD', 'Clean Code', 'DevOps', 'Scrum', 'AI agents'] },
+      { group: 'Practices', items: ['DDD', 'Clean Code', 'TDD', 'Unit and integration testing', 'DevOps', 'Scrum', 'AI agents'] },
     ],
     educationTitle: 'Education',
     education: [

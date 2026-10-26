@@ -26,7 +26,7 @@ export const pt: Content = {
   about: {
     title: 'Sobre mim',
     paragraphs: [
-      'Desenvolvo software há mais de 13 anos, a maior parte em .NET e Azure. Hoje meu trabalho vai além de escrever código: defino arquitetura, faço estimativas, reviso PRs e acompanho projetos do levantamento à entrega.',
+      'Desenvolvo software há mais de 15 anos, a maior parte em .NET e Azure. Comecei como desenvolvedor aos 21; antes disso trabalhei com suporte técnico e manutenção de hardware. Hoje meu trabalho vai além de escrever código: defino arquitetura, faço estimativas, reviso PRs e acompanho projetos do levantamento à entrega.',
       'Gosto especialmente de problemas de integração e sincronização entre sistemas, onde concorrência, volume e falhas parciais decidem se a solução aguenta a produção.',
     ],
   },
@@ -81,6 +81,7 @@ export const pt: Content = {
         ],
         results: [
           'Integração completa com a Shein, de ponta a ponta: alocação de itens, publicação de preços, recebimento de pedidos, cancelamentos e estornos.',
+          'Testes unitários e de integração numa abordagem próxima de TDD: com muitos jobs e eventos encadeados, os testes mantêm estável a interação entre as partes do sistema.',
           'Projeto .NET Aspire como ponto de partida do desenvolvedor: o ambiente local sobe a partir de um único projeto, com serviços e dependências orquestrados.',
         ],
         stack: ['.NET', 'Hangfire', 'MediatR', 'MassTransit', 'Azure Service Bus', '.NET Aspire'],
@@ -123,6 +124,7 @@ export const pt: Content = {
         location: 'Brasil',
         results: [
           'Melhoria de performance de um sistema de folha de pagamento dos EUA (Worklogic).',
+          'Testes de integração do sistema de folha de pagamento.',
           'Novas funcionalidades para um sistema de plano odontológico, com deploy em Linux.',
         ],
         stack: ['C#', 'ASP.NET MVC', 'Blazor', 'NHibernate', 'SQL Server', 'Selenium', 'Angular', 'Node.js', 'PostgreSQL', 'Wildfly', 'Nginx'],
@@ -164,7 +166,7 @@ export const pt: Content = {
       { group: 'Backend e cloud', items: ['C# / .NET 10', 'ASP.NET', 'SQL', 'Azure Functions', 'Data Factory', 'Service Bus', 'Key Vault'] },
       { group: 'Front-end', items: ['React', 'Angular', 'Blazor', 'TypeScript'] },
       { group: 'Plataforma', items: ['Dynamics 365', 'Power Apps', 'Power BI'] },
-      { group: 'Práticas', items: ['DDD', 'Clean Code', 'DevOps', 'Scrum', 'Agentes de IA'] },
+      { group: 'Práticas', items: ['DDD', 'Clean Code', 'TDD', 'Testes unitários e de integração', 'DevOps', 'Scrum', 'Agentes de IA'] },
     ],
     educationTitle: 'Formação',
     education: [

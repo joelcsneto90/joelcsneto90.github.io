@@ -2,11 +2,11 @@ import type { Content } from './types'
 
 export const pt: Content = {
   meta: {
-    title: 'Joel Neto — Solution Architect & Senior .NET Developer',
+    title: 'Joel Neto — Software Engineer / Solution Architect',
     description:
       'Portfolio de Joel Neto: arquitetura e entrega de soluções de software, com agentes de IA no fluxo de trabalho. .NET, Azure, React e Angular.',
   },
-  nav: { about: 'Sobre', ai: 'IA no trabalho', resume: 'Trajetória', contact: 'Contato' },
+  nav: { about: 'Sobre', ai: 'IA no trabalho', resume: 'Trajetória', projects: 'Projetos', contact: 'Contato' },
   ui: {
     toDark: 'Tema escuro',
     toLight: 'Tema claro',
@@ -18,9 +18,11 @@ export const pt: Content = {
   },
   hero: {
     greeting: 'Olá!',
-    role: 'Solution Architect · .NET',
+    role: 'Software Engineer / Solution Architect',
     tagline:
-      'Desenho e entrego soluções de software do diagrama ao deploy: arquitetura, decisões técnicas e entrega, com agentes de IA como parte do meu jeito de trabalhar. No dia a dia: .NET e Azure no backend, React e Angular no front-end.',
+      'Desenho e entrego soluções de software do diagrama ao deploy: arquitetura, decisões técnicas e entrega, com agentes de IA como parte do meu jeito de trabalhar.',
+    stack: '.NET / Node.js + Angular e React',
+    cloud: 'Azure como escolha principal para soluções em cloud',
     ctaJourney: 'Minha trajetória',
   },
   about: {
@@ -71,6 +73,7 @@ export const pt: Content = {
       {
         role: 'Senior .NET Developer',
         company: 'Luxclusif',
+        url: 'https://www.luxclusif.com/',
         period: '06/2026 — atual',
         location: 'Portugal',
         summary:
@@ -88,7 +91,8 @@ export const pt: Content = {
       },
       {
         role: 'Solution Architect',
-        company: 'Net-IT',
+        company: 'Alistar',
+        url: 'https://alistar.net/en/',
         period: '12/2018 — 05/2026',
         location: 'Portugal',
         summary:
@@ -97,6 +101,7 @@ export const pt: Content = {
           'Arquitetura de soluções: diagramas técnicos, decisões de arquitetura e revisão de PRs.',
           'Definição da melhor solução junto com os analistas e estimativas de esforço.',
           'Liderança técnica de projetos do início ao fim.',
+          'Criação de pipelines de build e deploy no Azure DevOps.',
         ],
         results: [
           'Sincronização em Azure Functions e Service Bus reestruturada: sem throttling nem concorrência entre execuções, com processamento thread-safe e melhor divisão das etapas sequenciais. **Os erros caíram 80%**, e os poucos casos restantes se resolvem logo em seguida com **retries de backoff exponencial**.',
@@ -135,6 +140,7 @@ export const pt: Content = {
       {
         role: 'Software Developer',
         company: 'Pitang Agile IT',
+        url: 'https://www.pitang.com/',
         period: '01/2013 — 12/2017',
         location: 'Brasil',
         summary: 'Soluções para uma empresa de estudos elétricos do Rio de Janeiro.',

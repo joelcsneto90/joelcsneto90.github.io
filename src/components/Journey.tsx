@@ -22,7 +22,15 @@ function JobCard({ job, c }: { job: Job; c: Content }) {
       <div className="job-meta">
         <p className="job-period">{job.period}</p>
         <h3>{job.role}</h3>
-        <p className="job-company">{job.company}</p>
+        <p className="job-company">
+          {job.url ? (
+            <a href={job.url} target="_blank" rel="noreferrer">
+              {job.company} ↗
+            </a>
+          ) : (
+            job.company
+          )}
+        </p>
         <p className="job-location">{job.location}</p>
       </div>
       <div className="job-body">

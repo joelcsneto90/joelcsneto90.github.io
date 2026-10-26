@@ -21,6 +21,7 @@ export function Header({ c, theme, onToggleTheme, onToggleLang }: Props) {
           <a href="#top">{c.nav.about}</a>
           <a href="#ai">{c.nav.ai}</a>
           <a href="#journey">{c.nav.resume}</a>
+          <a href="#projects">{c.nav.projects}</a>
           <a href="#contact">{c.nav.contact}</a>
         </nav>
         <div className="toggles">

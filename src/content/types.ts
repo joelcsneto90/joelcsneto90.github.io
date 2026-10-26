@@ -4,6 +4,7 @@ export type Lang = 'pt' | 'en'
 export interface Job {
   role: string
   company: string
+  url?: string
   period: string
   location: string
   summary?: string
@@ -21,7 +22,7 @@ export interface Project {
 
 export interface Content {
   meta: { title: string; description: string }
-  nav: { about: string; ai: string; resume: string; contact: string }
+  nav: { about: string; ai: string; resume: string; projects: string; contact: string }
   ui: {
     toDark: string
     toLight: string
@@ -31,7 +32,7 @@ export interface Content {
     results: string
     downloadResume: string
   }
-  hero: { greeting: string; role: string; tagline: string; ctaJourney: string }
+  hero: { greeting: string; role: string; tagline: string; stack: string; cloud: string; ctaJourney: string }
   about: { paragraphs: string[] }
   ai: {
     title: string

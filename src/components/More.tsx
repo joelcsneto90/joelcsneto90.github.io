@@ -5,7 +5,7 @@ import { SectionTitle } from './SectionTitle'
 export function More({ c }: { c: Content }) {
   const r = c.resume
   return (
-    <section className="section more">
+    <section id="projects" className="section more">
       <div className="container">
         <SectionTitle title={r.projectsTitle} />
         <div className="projects">

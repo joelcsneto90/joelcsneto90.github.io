@@ -19,6 +19,8 @@ export function Hero({ c }: { c: Content }) {
         <div className="hero-text">
           <h1>{c.hero.greeting}</h1>
           <p className="hero-tagline">{c.hero.tagline}</p>
+          <p className="hero-stack">{c.hero.stack}</p>
+          <p className="hero-cloud">{c.hero.cloud}</p>
           <div className="actions">
             <ResumeButton label={c.ui.downloadResume} />
             <a className="pill" href="#journey">

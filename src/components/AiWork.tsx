@@ -1,5 +1,6 @@
 import type { Content } from '../content/types'
 import { profile } from '../content/profile'
+import { GitHubIcon } from './Icons'
 import { SectionTitle } from './SectionTitle'
 
 export function AiWork({ c }: { c: Content }) {
@@ -19,6 +20,7 @@ export function AiWork({ c }: { c: Content }) {
         </ol>
         <p className="ai-footer">
           <a className="pill" href={profile.aiRepo} target="_blank" rel="noreferrer">
+            <GitHubIcon />
             {c.ai.repoLabel} ↗
           </a>
           <span className="muted">{c.ai.footnote}</span>

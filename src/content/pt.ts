@@ -21,7 +21,7 @@ export const pt: Content = {
     role: 'Software Engineer / Solution Architect',
     tagline:
       'Desenho e entrego soluções de software do diagrama ao deploy: arquitetura, decisões técnicas e entrega, com agentes de IA como parte do meu jeito de trabalhar.',
-    stack: '.NET / Node.js + Angular e React',
+    stack: '.NET / Node.js + Angular / React',
     cloud: 'Azure como escolha principal para soluções em cloud',
     ctaJourney: 'Minha trajetória',
   },

@@ -163,8 +163,8 @@ export const en: Content = {
           'Smart TV app for LG, Samsung and Android, published on the LG, Samsung and Google Play stores. Plays streamed content through the Xtream Codes API.',
         stack: ['React', 'Cordova'],
         links: [
-          { label: 'LG Store', url: 'https://us.lgappstv.com/main/tvapp/detail?appId=1118361' },
-          { label: 'Samsung', url: 'https://www.samsung.com/us/tvs/smart-tv/samsung-tv-apps-detail/?appId=3202202026648' },
+          { label: 'LG TV App Store', url: 'https://us.lgappstv.com/main/tvapp/detail?appId=1118361' },
+          { label: 'Samsung TV App Store', url: 'https://www.samsung.com/us/tvs/smart-tv/samsung-tv-apps-detail/?appId=3202202026648' },
         ],
       },
       {

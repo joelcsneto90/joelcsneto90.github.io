@@ -30,10 +30,20 @@ export function MailIcon() {
   )
 }
 
-export function DownloadIcon() {
+export function PdfIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-      <path d="M12 4v11m-5-5 5 5 5-5M5 20h14" />
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="pdf-icon">
+      <path
+        d="M6 2.5h8.5L19 7v13a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 20V4a1.5 1.5 0 0 1 1-1.5zM14 2.5V7h5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <rect x="2" y="11" width="16" height="7.5" rx="1.5" fill="currentColor" />
+      <text x="10" y="17" textAnchor="middle" fontSize="6" fontWeight="800" fontFamily="Arial, sans-serif">
+        PDF
+      </text>
     </svg>
   )
 }

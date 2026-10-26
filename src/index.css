@@ -21,6 +21,7 @@
   --alt-bg: #f4efea;
   --contact-bg: #26232c;
   --shadow: 0 18px 40px -18px rgb(40 30 60 / 0.35);
+  --shadow-hover: 0 30px 55px -22px rgb(60 40 120 / 0.5);
   color-scheme: light;
 }
 
@@ -44,6 +45,7 @@
   --alt-bg: #17161c;
   --contact-bg: #0d0c11;
   --shadow: 0 18px 40px -18px rgb(0 0 0 / 0.7);
+  --shadow-hover: 0 30px 55px -22px rgb(0 0 0 / 0.9);
   color-scheme: dark;
 }
 
@@ -168,6 +170,28 @@ html [data-reveal='in'] {
 
 .hero-text > :nth-child(n + 6) {
   animation-delay: 0.85s;
+}
+
+/* Card hover: lift, deeper shadow and an accent ring */
+.job,
+.project,
+.skill-group,
+.degree {
+  transition:
+    transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+    box-shadow 0.35s ease;
+}
+
+@media (hover: hover) {
+  .job:hover,
+  .project:hover,
+  .skill-group:hover,
+  .degree:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      var(--shadow-hover),
+      0 0 0 2px var(--mark);
+  }
 }
 
 /* Header */

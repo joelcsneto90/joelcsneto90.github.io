@@ -1,0 +1,59 @@
+export type Lang = 'pt' | 'en'
+
+export interface Job {
+  role: string
+  company: string
+  period: string
+  location: string
+  summary?: string
+  responsibilities?: string[]
+  results: string[]
+  stack: string[]
+}
+
+export interface Project {
+  name: string
+  description: string
+  stack: string[]
+  links: { label: string; url: string }[]
+}
+
+export interface Content {
+  meta: { title: string; description: string }
+  nav: { about: string; ai: string; resume: string; contact: string }
+  ui: {
+    toDark: string
+    toLight: string
+    otherLang: string
+    otherLangLabel: string
+    responsibilities: string
+    results: string
+    stack: string
+  }
+  hero: { role: string; tagline: string; ctaResume: string; ctaContact: string }
+  about: { title: string; paragraphs: string[] }
+  ai: {
+    title: string
+    intro: string
+    practices: { title: string; text: string }[]
+    repoLabel: string
+    footnote: string
+  }
+  resume: {
+    title: string
+    intro: string
+    experienceTitle: string
+    jobs: Job[]
+    projectsTitle: string
+    projects: Project[]
+    skillsTitle: string
+    skills: { group: string; items: string[] }[]
+    educationTitle: string
+    education: { title: string; school: string; year: string }[]
+    certificationsTitle: string
+    certifications: { code: string; name: string }[]
+    languagesTitle: string
+    languages: { name: string; level: string }[]
+  }
+  contact: { title: string; text: string }
+}

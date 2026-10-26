@@ -3,7 +3,7 @@ import { AiWork } from './components/AiWork'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Journey } from './components/Journey'
-import { More } from './components/More'
+import { Credentials, Education, Projects, Skills } from './components/More'
 import { ResumeButton } from './components/ResumeButton'
 import { SocialLinks } from './components/SocialLinks'
 import { en } from './content/en'
@@ -31,7 +31,10 @@ export default function App() {
         <Hero c={c} />
         <AiWork c={c} />
         <Journey c={c} />
-        <More c={c} />
+        <Projects c={c} />
+        <Skills c={c} />
+        <Education c={c} />
+        <Credentials c={c} />
         <section id="contact" className="contact">
           <div className="container contact-inner">
             <h2>{c.contact.title}</h2>

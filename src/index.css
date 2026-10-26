@@ -17,6 +17,8 @@
   --card-dark: #262428;
   --social-bar: #b3cbe0;
   --journey-bg: #e8cbbf;
+  --skills-bg: #ebe5f7;
+  --alt-bg: #f4efea;
   --contact-bg: #26232c;
   --shadow: 0 18px 40px -18px rgb(40 30 60 / 0.35);
   color-scheme: light;
@@ -38,6 +40,8 @@
   --card-dark: #211f29;
   --social-bar: #3b4a5c;
   --journey-bg: #2b2030;
+  --skills-bg: #1c1928;
+  --alt-bg: #17161c;
   --contact-bg: #0d0c11;
   --shadow: 0 18px 40px -18px rgb(0 0 0 / 0.7);
   color-scheme: dark;
@@ -654,15 +658,7 @@ h4 {
   font-weight: 500;
 }
 
-/* More */
-.more .section-title {
-  margin-top: 4.5rem;
-}
-
-.more .section-title:first-child {
-  margin-top: 0;
-}
-
+/* Projects */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -697,49 +693,106 @@ h4 {
   font-weight: 600;
 }
 
+/* Skills */
+.skills-section {
+  background: var(--skills-bg);
+}
+
 .skills {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
-.skills h3,
-.facts h3 {
+.skill-group {
+  padding: 1.5rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.skill-group h3,
+.credentials h3 {
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: var(--accent);
+}
+
+.skill-group .chips {
+  margin-top: 0.9rem;
+}
+
+/* Education */
+.education {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.degree {
+  padding: 2rem 2rem 2rem 1.75rem;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.degree-year {
+  margin: 0 0 0.5rem;
+  font-family: var(--serif);
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--mark);
+}
+
+.degree h3 {
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.degree-school {
+  margin: 0.6rem 0 0;
+  font-weight: 600;
   color: var(--muted);
 }
 
-.skills .chips {
-  margin-top: 0.75rem;
-}
-
-.facts {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 2rem;
-  margin-top: 4.5rem;
-  padding-top: 3rem;
+/* Certifications and languages */
+.credentials-section {
+  background: var(--alt-bg);
   border-top: 1px solid var(--border);
 }
 
-.facts ul {
+.credentials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem 4rem;
+}
+
+.credentials ul {
   margin: 1rem 0 0;
   padding: 0;
   list-style: none;
 }
 
-.facts li {
+.credentials li {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border);
 }
 
-.facts span {
-  font-size: 0.88rem;
-  color: var(--muted);
+.badge {
+  flex-shrink: 0;
+  min-width: 4.5rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 /* Contact */

@@ -183,10 +183,12 @@ export const pt: Content = {
       { group: 'Também', items: ['Dynamics 365', 'Power Platform'] },
     ],
     educationTitle: 'Formação',
+    educationSubtitle: 'Formação acadêmica',
     education: [
       { title: 'Especialização em Engenharia de Software', school: 'Universidade de Pernambuco', year: '2017' },
       { title: 'Bacharelado em Sistemas de Informação', school: 'Faculdade Joaquim Nabuco', year: '2014' },
     ],
+    credentialsTitle: 'Certificações e idiomas',
     certificationsTitle: 'Certificações',
     certifications: [
       { code: 'AZ-900', name: 'Azure Fundamentals' },

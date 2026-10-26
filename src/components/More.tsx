@@ -2,10 +2,10 @@ import type { Content } from '../content/types'
 import { Chips } from './Journey'
 import { SectionTitle } from './SectionTitle'
 
-export function More({ c }: { c: Content }) {
+export function Projects({ c }: { c: Content }) {
   const r = c.resume
   return (
-    <section id="projects" className="section more">
+    <section id="projects" className="section">
       <div className="container">
         <SectionTitle title={r.projectsTitle} />
         <div className="projects">
@@ -24,37 +24,63 @@ export function More({ c }: { c: Content }) {
             </article>
           ))}
         </div>
+      </div>
+    </section>
+  )
+}
 
+export function Skills({ c }: { c: Content }) {
+  const r = c.resume
+  return (
+    <section className="section skills-section">
+      <div className="container">
         <SectionTitle title={r.skillsTitle} />
         <div className="skills">
           {r.skills.map((s) => (
-            <div key={s.group}>
+            <div key={s.group} className="skill-group">
               <h3>{s.group}</h3>
               <Chips items={s.items} />
             </div>
           ))}
         </div>
+      </div>
+    </section>
+  )
+}
 
-        <div className="facts">
-          <div>
-            <h3>{r.educationTitle}</h3>
-            <ul>
-              {r.education.map((e) => (
-                <li key={e.title}>
-                  <strong>{e.title}</strong>
-                  <span>
-                    {e.school} · {e.year}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
+export function Education({ c }: { c: Content }) {
+  const r = c.resume
+  return (
+    <section className="section">
+      <div className="container">
+        <SectionTitle title={r.educationTitle} subtitle={r.educationSubtitle} />
+        <div className="education">
+          {r.education.map((e) => (
+            <article key={e.title} className="degree">
+              <p className="degree-year">{e.year}</p>
+              <h3>{e.title}</h3>
+              <p className="degree-school">{e.school}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export function Credentials({ c }: { c: Content }) {
+  const r = c.resume
+  return (
+    <section className="section credentials-section">
+      <div className="container">
+        <SectionTitle title={r.credentialsTitle} />
+        <div className="credentials">
           <div>
             <h3>{r.certificationsTitle}</h3>
             <ul>
               {r.certifications.map((cert) => (
                 <li key={cert.code}>
-                  <strong>{cert.code}</strong>
+                  <span className="badge">{cert.code}</span>
                   <span>{cert.name}</span>
                 </li>
               ))}
@@ -66,7 +92,7 @@ export function More({ c }: { c: Content }) {
               {r.languages.map((l) => (
                 <li key={l.name}>
                   <strong>{l.name}</strong>
-                  <span>{l.level}</span>
+                  <span className="muted">{l.level}</span>
                 </li>
               ))}
             </ul>

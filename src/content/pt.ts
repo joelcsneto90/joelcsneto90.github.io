@@ -182,8 +182,7 @@ export const pt: Content = {
       { group: 'Práticas', items: ['DDD', 'Clean Code', 'TDD', 'Testes unitários e de integração', 'DevOps', 'Scrum', 'Agentes de IA'] },
       { group: 'Também', items: ['Dynamics 365', 'Power Platform'] },
     ],
-    educationTitle: 'Formação',
-    educationSubtitle: 'Formação acadêmica',
+    educationTitle: 'Formação acadêmica',
     education: [
       { title: 'Especialização em Engenharia de Software', school: 'Universidade de Pernambuco', year: '2017' },
       { title: 'Bacharelado em Sistemas de Informação', school: 'Faculdade Joaquim Nabuco', year: '2014' },

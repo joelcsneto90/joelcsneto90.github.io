@@ -53,7 +53,7 @@ export function Education({ c }: { c: Content }) {
   return (
     <section className="section">
       <div className="container">
-        <SectionTitle title={r.educationTitle} subtitle={r.educationSubtitle} />
+        <SectionTitle title={r.educationTitle} />
         <div className="education">
           {r.education.map((e) => (
             <article key={e.title} className="degree">

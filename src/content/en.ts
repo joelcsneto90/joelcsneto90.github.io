@@ -4,7 +4,7 @@ export const en: Content = {
   meta: {
     title: 'Joel Neto — Solution Architect & Senior .NET Developer',
     description:
-      'Portfolio of Joel Neto: designing and delivering .NET and Azure solutions with React and Angular front ends, with AI agents in the workflow.',
+      'Portfolio of Joel Neto: designing and delivering software solutions, with AI agents in the workflow. .NET, Azure, React and Angular.',
   },
   nav: { about: 'About', ai: 'AI at work', resume: 'Journey', contact: 'Contact' },
   ui: {
@@ -20,7 +20,7 @@ export const en: Content = {
     greeting: 'Hello!',
     role: 'Solution Architect · .NET',
     tagline:
-      'I design and deliver .NET and Azure solutions, with React and Angular front ends, from the diagram to the deploy, with AI agents as part of how I work.',
+      'I design and deliver software solutions from the diagram to the deploy: architecture, technical decisions and delivery, with AI agents as part of how I work. Day to day: .NET and Azure on the backend, React and Angular on the front end.',
     ctaJourney: 'My journey',
   },
   about: {

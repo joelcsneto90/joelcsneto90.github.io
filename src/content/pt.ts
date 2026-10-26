@@ -4,7 +4,7 @@ export const pt: Content = {
   meta: {
     title: 'Joel Neto — Solution Architect & Senior .NET Developer',
     description:
-      'Portfolio de Joel Neto: arquitetura e entrega de soluções em .NET e Azure, com front-end em React e Angular e agentes de IA no fluxo de trabalho.',
+      'Portfolio de Joel Neto: arquitetura e entrega de soluções de software, com agentes de IA no fluxo de trabalho. .NET, Azure, React e Angular.',
   },
   nav: { about: 'Sobre', ai: 'IA no trabalho', resume: 'Trajetória', contact: 'Contato' },
   ui: {
@@ -20,7 +20,7 @@ export const pt: Content = {
     greeting: 'Olá!',
     role: 'Solution Architect · .NET',
     tagline:
-      'Desenho e entrego soluções em .NET e Azure, com front-end em React e Angular, do diagrama ao deploy, com agentes de IA como parte do meu jeito de trabalhar.',
+      'Desenho e entrego soluções de software do diagrama ao deploy: arquitetura, decisões técnicas e entrega, com agentes de IA como parte do meu jeito de trabalhar. No dia a dia: .NET e Azure no backend, React e Angular no front-end.',
     ctaJourney: 'Minha trajetória',
   },
   about: {

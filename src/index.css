@@ -710,8 +710,7 @@ h4 {
   box-shadow: var(--shadow);
 }
 
-.skill-group h3,
-.credentials h3 {
+.skill-group h3 {
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;

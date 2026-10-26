@@ -73,10 +73,9 @@ export function Credentials({ c }: { c: Content }) {
   return (
     <section className="section credentials-section">
       <div className="container">
-        <SectionTitle title={r.credentialsTitle} />
         <div className="credentials">
           <div>
-            <h3>{r.certificationsTitle}</h3>
+            <SectionTitle title={r.certificationsTitle} />
             <ul>
               {r.certifications.map((cert) => (
                 <li key={cert.code}>
@@ -87,7 +86,7 @@ export function Credentials({ c }: { c: Content }) {
             </ul>
           </div>
           <div>
-            <h3>{r.languagesTitle}</h3>
+            <SectionTitle title={r.languagesTitle} />
             <ul>
               {r.languages.map((l) => (
                 <li key={l.name}>

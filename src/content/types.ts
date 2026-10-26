@@ -53,7 +53,6 @@ export interface Content {
     skills: { group: string; items: string[] }[]
     educationTitle: string
     education: { title: string; school: string; year: string }[]
-    credentialsTitle: string
     certificationsTitle: string
     certifications: { code: string; name: string }[]
     languagesTitle: string

@@ -19,8 +19,6 @@ const STAGGER_MS = 90
 // Fades and lifts elements in the first time they scroll into view.
 export function useReveal() {
   useEffect(() => {
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries

@@ -137,32 +137,37 @@ html [data-reveal='in'] {
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .hero-panel {
-    animation: panel-in 1s cubic-bezier(0.65, 0, 0.35, 1) both;
-  }
-  .profile-card {
-    animation: rise 0.9s 0.35s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-  }
-  .hero-text > * {
-    animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-  }
-  .hero-text > :nth-child(1) {
-    animation-delay: 0.45s;
-  }
-  .hero-text > :nth-child(2) {
-    animation-delay: 0.55s;
-  }
-  .hero-text > :nth-child(3),
-  .hero-text > :nth-child(4) {
-    animation-delay: 0.65s;
-  }
-  .hero-text > :nth-child(5) {
-    animation-delay: 0.75s;
-  }
-  .hero-text > :nth-child(n + 6) {
-    animation-delay: 0.85s;
-  }
+.hero-panel {
+  animation: panel-in 1s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.profile-card {
+  animation: rise 0.9s 0.35s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.hero-text > * {
+  animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.hero-text > :nth-child(1) {
+  animation-delay: 0.45s;
+}
+
+.hero-text > :nth-child(2) {
+  animation-delay: 0.55s;
+}
+
+.hero-text > :nth-child(3),
+.hero-text > :nth-child(4) {
+  animation-delay: 0.65s;
+}
+
+.hero-text > :nth-child(5) {
+  animation-delay: 0.75s;
+}
+
+.hero-text > :nth-child(n + 6) {
+  animation-delay: 0.85s;
 }
 
 /* Header */

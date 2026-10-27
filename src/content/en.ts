@@ -28,7 +28,7 @@ export const en: Content = {
   about: {
     paragraphs: [
       "I've been building software for over 15 years, mostly with .NET and Azure. I started as a developer at 21; before that I worked in technical support and hardware maintenance. Today my work goes beyond writing code: I define architecture, estimate, review PRs and follow projects from requirements to delivery.",
-      'I especially enjoy integration and synchronization problems between systems, where concurrency, volume and partial failures decide whether a solution holds up in production.',
+      'Solid experience in integration and synchronization between systems: messaging, background processing, concurrency control, high volume and handling partial failures in production.',
     ],
   },
   ai: {

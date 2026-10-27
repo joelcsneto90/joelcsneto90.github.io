@@ -28,7 +28,7 @@ export const pt: Content = {
   about: {
     paragraphs: [
       'Desenvolvo software há mais de 15 anos, a maior parte em .NET e Azure. Comecei como desenvolvedor aos 21; antes disso trabalhei com suporte técnico e manutenção de hardware. Hoje meu trabalho vai além de escrever código: defino arquitetura, faço estimativas, reviso PRs e acompanho projetos do levantamento à entrega.',
-      'Gosto especialmente de problemas de integração e sincronização entre sistemas, onde concorrência, volume e falhas parciais decidem se a solução aguenta a produção.',
+      'Tenho experiência sólida em integração e sincronização entre sistemas: mensageria, processamento em background, controle de concorrência, alto volume e tratamento de falhas parciais em produção.',
     ],
   },
   ai: {

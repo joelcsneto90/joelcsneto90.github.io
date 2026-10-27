@@ -29,6 +29,7 @@ export const en: Content = {
     paragraphs: [
       "I've been building software for over 15 years, mostly with .NET and Azure. Before development, I worked in technical support and hardware maintenance. Today my work goes beyond writing code: I define architecture, estimate, review PRs and follow projects from requirements to delivery.",
       'Solid experience in integration and synchronization between systems: messaging, background processing, concurrency control, high volume and handling partial failures in production.',
+      "I hold a Bachelor's in Information Systems and a postgraduate degree in Software Engineering. I strive to stay up to date with new technologies, to study and innovate, following best practices and proven approaches.",
     ],
   },
   ai: {

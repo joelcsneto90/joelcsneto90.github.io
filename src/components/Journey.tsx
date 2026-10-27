@@ -18,7 +18,7 @@ export function Chips({ items }: { items: string[] }) {
 
 function JobCard({ job, c }: { job: Job; c: Content }) {
   return (
-    <article className="job">
+    <article className="job" tabIndex={0}>
       <div className="job-meta">
         <p className="job-period">{job.period}</p>
         <h3>{job.role}</h3>

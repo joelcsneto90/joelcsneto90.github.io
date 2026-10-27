@@ -182,11 +182,17 @@ html [data-reveal='in'] {
     box-shadow 0.35s ease;
 }
 
+/* Cards are focusable (tabIndex), so a tap or click keeps the effect until focus moves on. */
+:is(.job, .project, .skill-group, .degree):is(:focus, :focus-within, :active) {
+  outline: none;
+  transform: translateY(-6px);
+  box-shadow:
+    var(--shadow-hover),
+    0 0 0 2px var(--mark);
+}
+
 @media (hover: hover) {
-  .job:hover,
-  .project:hover,
-  .skill-group:hover,
-  .degree:hover {
+  :is(.job, .project, .skill-group, .degree):hover {
     transform: translateY(-6px);
     box-shadow:
       var(--shadow-hover),

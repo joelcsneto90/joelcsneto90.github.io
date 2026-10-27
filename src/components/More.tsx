@@ -10,7 +10,7 @@ export function Projects({ c }: { c: Content }) {
         <SectionTitle title={r.projectsTitle} />
         <div className="projects">
           {r.projects.map((p) => (
-            <article key={p.name} className="project">
+            <article key={p.name} className="project" tabIndex={0}>
               <h3>{p.name}</h3>
               <p>{p.description}</p>
               <Chips items={p.stack} />
@@ -37,7 +37,7 @@ export function Skills({ c }: { c: Content }) {
         <SectionTitle title={r.skillsTitle} />
         <div className="skills">
           {r.skills.map((s, i) => (
-            <div key={i} className="skill-group">
+            <div key={i} className="skill-group" tabIndex={0}>
               <h3>{s.group}</h3>
               <Chips items={s.items} />
             </div>
@@ -56,7 +56,7 @@ export function Education({ c }: { c: Content }) {
         <SectionTitle title={r.educationTitle} />
         <div className="education">
           {r.education.map((e) => (
-            <article key={e.year} className="degree">
+            <article key={e.year} className="degree" tabIndex={0}>
               <p className="degree-year">{e.year}</p>
               <h3>{e.title}</h3>
               <p className="degree-school">{e.school}</p>

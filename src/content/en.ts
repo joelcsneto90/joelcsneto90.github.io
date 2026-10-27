@@ -124,6 +124,7 @@ export const en: Content = {
       {
         role: 'Software Engineer',
         company: 'M2S Software',
+        url: 'http://www.m2ssoftware.com/m2s_software/index.html',
         period: '01/2018 — 11/2018',
         location: 'Brazil',
         summary: 'Worklogic, an American payroll system in the healthcare sector.',
